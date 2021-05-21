@@ -1,0 +1,145 @@
+@font-face
+{
+    font-family: hindu;
+    src: url('SAMARN__.TTF'),
+    url('SAMARO__.TTF');
+}
+html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+.sidebar {
+    grid-area: sidebar;
+} 
+.sidebar2 {
+    grid-area: sidebar2;
+}
+.side-image {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15%;
+    border: 3px solid black;
+}
+.ram-logo {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+} 
+.ram-title {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+}
+.ram-logo img {
+    width: 35%;
+    height: 90%;
+}
+.content {
+    grid-area: content;
+}
+.header {
+    grid-area: header;
+}
+.footer {
+    grid-area: footer;
+}
+.wrapper {
+    background-color: #fff;
+    color: #444;
+}
+body {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
+    "footer"
+}
+#description {
+    font-weight: bold;
+}
+.navBar{
+    height: 100%;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;    
+} 
+.nav li {
+    font-family: "hindu";
+    background-color: #FFFEEE;
+    padding-top: 20%;
+    font-size: 2em;
+    border-radius: 20%;
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    border: 3px solid black;
+    text-align: center;
+}
+.nav li:hover {
+    background:  #c9ab59;
+}
+.header, .footer {
+    background-color: #FF7A0E;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'hindu';    
+    border: 3px solid black;
+}
+.content {
+    background-color: #FFFEEE;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'hindu';    
+    border: 3px solid black;
+}  
+.sidebar2 {    
+    border: 3px solid black;
+    background-color: #F1C22F;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'hindu';
+}
+.sidebar {
+    background-color: #F1C22F;    
+    border: 3px solid black;
+}
+.family-tree {
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (min-width: 500px)   {
+    body {
+        grid-gap: 1px;
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 15% auto 15%;
+        grid-template-areas:
+        "header  header  header"
+        "sidebar content sidebar2"
+        "footer  footer  footer";
+        max-width: 100%;
+        height: 100%;
+    }
+}

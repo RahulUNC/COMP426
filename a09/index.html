@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Twitter - a09</title>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/regular.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+    <!-- Include links to CSS stylesheets below -->
+    
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="node_modules/bulma-tooltip/dist/css/bulma-tooltip.min.css">
+</head>
+
+<body>
+    <section class="hero is-dark has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title"><strong>Twitter</strong> <i class="fab fa-twitter"></i></h1>
+                <h2 class="subtitle">a09 - Rahul Narvekar</h2>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="field">
+                <label class="label">Welcome!</label>
+                <div class="control">
+                    <textarea maxlength="280"id="tweet-text" class="textarea" placeholder="What's happening?"></textarea>
+                </div>
+            </div>
+            <div class="field" id="new-tweet">
+                <p class="control">
+                    <button class="button is-info is-pulled-right" id="post-tweet">
+                        Tweet
+                    </button>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <br>
+        <div class="container">
+            <div id="feed">
+            </div>           
+        </div>
+    </section>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
